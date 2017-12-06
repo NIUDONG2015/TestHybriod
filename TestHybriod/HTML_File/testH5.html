@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+                <meta name="format-detection" content="telephone=no, email=no" />
+                <meta http-equiv="Cache-Control" content="no-siteapp" />
+                <meta name="renderer" content="webkit">
+                    <meta http-equiv="Cache-Control" content="no-cache" />
+                    <meta name="apple-mobile-web-app-title" content="胖胖猪">
+                        <meta name="apple-mobile-web-app-capable" content="no">
+                            <meta name="apple-mobile-web-app-status-bar-style" content="default">
+                                <meta name="description" content="胖胖猪触屏版">
+                                    <meta name="keywords" content="胖胖猪 触屏版 出借 车贷 ">
+                                        <script>/*REM 自适应布局方案 */!function (e) { function t(a) { if (i[a]) return i[a].exports; var n = i[a] = { exports: {}, id: a, loaded: !1 }; return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports } var i = {}; return t.m = e, t.c = i, t.p = "", t(0) }([function (e, t) { "use strict"; Object.defineProperty(t, "__esModule", { value: !0 }); var i = window; t["default"] = i.flex = function (e, t) { var a = e || 100, n = t || 1, r = i.document, o = navigator.userAgent, d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i), l = o.match(/U3\/((\d+|\.){5,})/i), c = l && parseInt(l[1].split(".").join(""), 10) >= 80, p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi), s = i.devicePixelRatio || 1; p || d && d[1] > 534 || c || (s = 1); var u = 1 / s, m = r.querySelector('meta[name="viewport"]'); m || (m = r.createElement("meta"), m.setAttribute("name", "viewport"), r.head.appendChild(m)), m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), r.documentElement.style.fontSize = a / 2 * s * n + "px", r.documentElement.setAttribute("data-dpr", s) }, e.exports = t["default"] }]); flex(100, 1);</script>
+                                        <title>关于我们</title>
+                                        <style>
+                                            body {
+                                                font-size: .2rem;
+                                            }
+                                        
+                                        button {
+                                            display: block;
+                                            font-size: .2rem
+                                        }
+                                        
+                                        .test-btn {
+                                            display: inline-block;
+                                            padding: .1rem .2rem;
+                                            margin: .3rem;
+                                            background-color: #ff5600;
+                                            color: #fff;
+                                        }
+                                        </style>
+    </head>
+    
+    <body>
+        <div class="m-page" id="m-page" style="padding-top:0;padding-bottom:.5rem">
+            <!-- 测试  start -->
+            <a class="test-btn" onclick="window.webkit.messageHandlers.ocWkModth.postMessage({'page':'testVC','sb':'ly','result':'success'})">测试</a>
+            <!-- 测试  end -->
+            <button onclick="ocModthLog({'page':'testVC'})">UIWeb测试</button>
+<!--            <button onclick="VC.testLog({'page':'testVC'})">UIWeb测试</button>-->
+
+            <h2 class="m-aboutus-title">公司简介</h2>
+            <ul class="m-company-info">
+                <li>胖胖猪是投资平台。</li>
+                <li>胖胖猪平台，全力为广大用户提供便捷高效的互联网金融服务。</li>
+                <li>立足当下，稳健发展。展望未来，砥砺前行。力争将胖胖猪打造成为中国互联网金融知名品牌。</li>
+            </ul>
+            
+        </div>
+    </body>
+    
+</html>
